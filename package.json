@@ -1,6 +1,6 @@
 {
   "name": "modals-manager",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Modal manager which will add component in app dynamically",
   "main": "bundles/modal-manager.umd.js",
   "module": "index.js",
@@ -25,9 +25,12 @@
     "type": "git",
     "url": "https://github.com/nikd-developer/modal-manager.git"
   },
+  "dependencies": {
+    "@ng-bootstrap/ng-bootstrap": "^1.0.0",
+    "rxjs": "^5.0.1"
+  },
   "peerDependencies": {
     "@angular/core": "^2.4.0 || ^4.0.0",
-    "rxjs": "^5.0.1",
-    "@ng-bootstrap/ng-bootstrap": "^1.0.0"
+    "rxjs": "^5.0.1"
   }
 }
