@@ -103,41 +103,16 @@ var ModalsManagerComponent = /** @class */ (function () {
     return ModalsManagerComponent;
 }());
 
-var AlertModal = /** @class */ (function () {
-    function AlertModal(activeModal) {
-        this.activeModal = activeModal;
-    }
-    AlertModal.decorators = [
-        { type: core.Component, args: [{
-                    selector: 'app-alert-modal',
-                    templateUrl: 'alert-modal.component.html'
-                },] },
-    ];
-    /** @nocollapse */
-    AlertModal.ctorParameters = function () { return [
-        { type: ngBootstrap.NgbActiveModal, },
-    ]; };
-    AlertModal.propDecorators = {
-        "inputs": [{ type: core.Input },],
-    };
-    return AlertModal;
-}());
-
 var ModalsManagerModule = /** @class */ (function () {
     function ModalsManagerModule() {
     }
     ModalsManagerModule.decorators = [
         { type: core.NgModule, args: [{
                     declarations: [
-                        ModalsManagerComponent,
-                        AlertModal
+                        ModalsManagerComponent
                     ],
                     exports: [
-                        ModalsManagerComponent,
-                        AlertModal
-                    ],
-                    entryComponents: [
-                        AlertModal
+                        ModalsManagerComponent
                     ],
                     imports: [
                         common.CommonModule
@@ -155,7 +130,6 @@ var ModalsManagerModule = /** @class */ (function () {
 exports.ModalsManagerComponent = ModalsManagerComponent;
 exports.ModalsManagerModule = ModalsManagerModule;
 exports.ModalsManagerService = ModalsManagerService;
-exports.AlertModal = AlertModal;
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
