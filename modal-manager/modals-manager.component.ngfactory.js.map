@@ -1,0 +1,1 @@
+{"version":3,"file":"modals-manager.component.ngfactory.js","sourceRoot":"","sources":["../../modal-manager/modals-manager.component.ngfactory.ts"],"names":[],"mappings":"","sourcesContent":["import * as i0 from '@angular/core';\ni0.ComponentFactory;\n"]}
