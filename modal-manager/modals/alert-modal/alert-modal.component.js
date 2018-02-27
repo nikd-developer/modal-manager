@@ -7,7 +7,7 @@ var AlertModal = /** @class */ (function () {
     AlertModal.decorators = [
         { type: Component, args: [{
                     selector: 'app-alert-modal',
-                    templateUrl: './alert-modal.component.html'
+                    templateUrl: 'alert-modal.component.html'
                 },] },
     ];
     /** @nocollapse */
