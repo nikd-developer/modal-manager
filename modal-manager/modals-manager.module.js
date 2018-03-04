@@ -5,6 +5,12 @@ import { ModalsManagerComponent } from './modals-manager.component';
 var ModalsManagerModule = /** @class */ (function () {
     function ModalsManagerModule() {
     }
+    ModalsManagerModule.forRoot = function () {
+        return {
+            ngModule: ModalsManagerModule,
+            providers: [ModalsManagerService]
+        };
+    };
     ModalsManagerModule.decorators = [
         { type: NgModule, args: [{
                     declarations: [
@@ -15,9 +21,6 @@ var ModalsManagerModule = /** @class */ (function () {
                     ],
                     imports: [
                         CommonModule
-                    ],
-                    providers: [
-                        ModalsManagerService
                     ]
                 },] },
     ];

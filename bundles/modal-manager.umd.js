@@ -106,6 +106,12 @@ var ModalsManagerComponent = /** @class */ (function () {
 var ModalsManagerModule = /** @class */ (function () {
     function ModalsManagerModule() {
     }
+    ModalsManagerModule.forRoot = function () {
+        return {
+            ngModule: ModalsManagerModule,
+            providers: [ModalsManagerService]
+        };
+    };
     ModalsManagerModule.decorators = [
         { type: core.NgModule, args: [{
                     declarations: [
@@ -116,9 +122,6 @@ var ModalsManagerModule = /** @class */ (function () {
                     ],
                     imports: [
                         common.CommonModule
-                    ],
-                    providers: [
-                        ModalsManagerService
                     ]
                 },] },
     ];
