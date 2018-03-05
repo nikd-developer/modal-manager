@@ -52,7 +52,7 @@ export class AppModule {}
 
 Step2. Add component in application
 ```html
-<!-- alert.component.html -->
+<!-- app.component.html -->
 ...
  <app-modal-manager></app-modal-manager>
 ```
