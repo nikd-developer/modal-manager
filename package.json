@@ -1,6 +1,6 @@
 {
   "name": "modals-manager",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Modal manager which will add component in app dynamically",
   "main": "bundles/modal-manager.umd.js",
   "module": "index.js",
@@ -12,7 +12,7 @@
     "angular4",
     "angular 5",
     "angular5",
-    "Dynamic Loader",
+    "Dynamic Modals",
     "Modals"
   ],
   "author": "nikd.developer@gmail.com",

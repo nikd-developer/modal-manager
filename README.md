@@ -50,7 +50,15 @@ import { ModalsManagerModule } from 'modals-manager';
 export class AppModule {}
 ```
 
-Step2. Create a dynamic modal and add it as entry component in application
+Step2. Add component in application
+```html
+<!-- alert.component.html -->
+...
+ <app-modal-manager></app-modal-manager>
+```
+
+
+Step3. Create a dynamic modal and add it as entry component in application
 ```ts
 // alert.component.ts
 import {Component, Input} from '@angular/core';
@@ -81,7 +89,7 @@ export class AlertModal {
 </div>
 ```
 
-Step3. Declare modal in application
+Step4. Declare modal in application
 
 ```ts
 ...
@@ -102,7 +110,7 @@ export class AppModule {
 ```
 
 
-Step4. Open modal from component
+Step5. Open modal from component
 
 ```ts
 // app.component.ts
