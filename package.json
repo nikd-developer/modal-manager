@@ -1,6 +1,6 @@
 {
   "name": "modals-manager",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Modal manager which will add component in app dynamically",
   "main": "bundles/modal-manager.umd.js",
   "module": "index.js",
