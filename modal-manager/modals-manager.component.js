@@ -23,7 +23,7 @@ var ModalsManagerComponent = /** @class */ (function () {
         });
     };
     ModalsManagerComponent.prototype.open = function (state) {
-        this.modalRef = this.modalService.open(state.component);
+        this.modalRef = this.modalService.open(state.component, state.options || {});
         this.modalRef.componentInstance.inputs = state.payload || {};
         this.modalRef.result.then(function (result) {
             if (state.callback) {

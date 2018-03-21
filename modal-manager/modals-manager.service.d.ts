@@ -14,4 +14,5 @@ export interface ModalManagerState {
     payload?: any;
     component: any;
     callback?: any;
+    options?: any;
 }
